@@ -8,8 +8,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5;
-    background-color: rgb(73, 118, 146);
+    line-height:1.5;
+    background-color: rgb(69, 109, 134); 
   }
   
 article h1 {
@@ -46,15 +46,25 @@ display: grid;
 text-align: center;
 grid-template-rows: 300px 300px 300px;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-areas: "one one three"
+grid-template-areas: 
+                     "one one three"
                      "one one two"
                      "four five six" 
   
 }
 
-.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8, .grid-item9 {
-  background-color: aqua;
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 300%;
   padding: 30px;
+  text-align: center;
+  text-shadow: 3px 3px;  
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
 }
 
 .grid-item1 {
@@ -97,6 +107,13 @@ grid-template-areas: "one one three"
   background-image: url(./assets/apps.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.project-head {
+  padding: 1px;
+  text-align: center;
+  background-color: black;
+  background-position: center;
 }
 
 .avatar {
