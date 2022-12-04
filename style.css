@@ -40,6 +40,65 @@ text-align: center;
   
 }
 
+.gridbox {
+  margin: 0px 5%;
+display: grid;
+text-align: center;
+grid-template-rows: 300px 300px 300px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: "one one three"
+                     "one one two"
+                     "four five six" 
+  
+}
+
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7, .grid-item8, .grid-item9 {
+  background-color: aqua;
+  padding: 30px;
+}
+
+.grid-item1 {
+  grid-area: one;
+  background-image: url(./assets/keyboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.grid-item2 {
+  grid-area: two;
+  background-image: url(./assets/workspace.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-item3 {
+  grid-area: three;
+  background-image: url(./assets/stocks.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-item4 {
+  grid-area: four;
+  background-image: url(./assets/world.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-item5 {
+  grid-area: five;
+  background-image: url(./assets/windmills.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-item6 {
+  grid-area: six;
+  background-image: url(./assets/apps.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .avatar {
     border-radius: 50%;
 }
